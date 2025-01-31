@@ -5,6 +5,7 @@
     padding: 0;
     border: 0;
     list-style: none;
+    overflow-x: hidden;
 }
 html{
     font-size: 10px;
@@ -21,12 +22,16 @@ body{
 }
 .h1{
 padding: 7rem 4rem 2rem 3rem;
-font-weight: 60rem;
+font-weight: 6rem;
 font-size: 4rem;
 line-height: 6rem;
 color: var(--title-color);
 text-align: center;
+display: block;
 
+}
+.h2{
+    display: none;
 }
 .contenair{
     display: flex;
@@ -53,6 +58,9 @@ text-align: center;
     font-size:2.5rem;
     font-weight: 5rem;
     padding: 4rem 0;
+}
+.items_2-image{
+    display: none;
 }
 .items_2-1>img{
     /* background-color: var(--secondary-color); */
@@ -85,6 +93,11 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     
+}
+.prime2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contenair_1>div>a{
     font-size: 1rem;
@@ -138,15 +151,66 @@ color: #000E01;
 @media only screen and ( max-width: 430px) {
     
     .h1{
-        font-size: 1.5rem;
+        display: none;
+    }
+    .h2{
+        font-weight: 6rem;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: var(--title-color);
+        text-align: center;
+        display: block;
     }
     .contenair{
         flex-direction: column;
     }
+    .items_1{
+        width: 100%;
+        border-style: none;
+    }
+    .items_1-image{
+       display: none;
+    }
+    .items_2>h1{
+        gap: 0;
+        line-height: 3rem;
+    }
+    .items_2>p{
+        font-size: 2rem;
+        font-weight: 1rem;
+        padding: 1rem 0;
+    }
+    .items_2-image{
+        display: block;
+        border-left: none;
+        padding-left: 3rem;
+    }
     .contenair_1{
-        flex-direction: column;
+        display: flex;
+        gap: 2rem;
+     
+    }
+    .contenair_1>div>p{
+        font-size: 1.5rem;
+        justify-content: space-around;
+    }
+    .prime2{
+       display: none;
+    }
+    .code{
+        width: 15rem;
+        height: 20rem;
+    }
+    .prime1_1{
+        width: 15rem;
+        height: 20rem;
     }
     .last{
-        flex-direction: column;
+      flex-direction: column-reverse;
+    }
+    .last-2-1{
+        width: 30rem;
+        height: 20rem;
+        padding-left: 7rem;
     }
 }
