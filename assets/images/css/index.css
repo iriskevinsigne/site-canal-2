@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+html{
+    font-size: 10px;
+    font-family: "ibm plex", sans hebrew;
+}
+:root{
+    --firs-color:#FFFFFF;
+    --title-color:#000E01;
+    --secondary-color:#618264;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.h1{
+padding: 7rem 4rem 2rem 3rem;
+font-weight: 60rem;
+font-size: 4rem;
+line-height: 6rem;
+color: var(--title-color);
+text-align: center;
+
+}
+.contenair{
+    display: flex;
+}
+.items_1{
+    flex: 1;
+    border-radius: 2rem;
+}
+.items_2{
+    flex: 1;
+    display: block;
+    gap: 3rem;
+    padding: 4rem 2rem;
+}
+.items_2>h1{
+    font-size: 4rem;
+    font-weight: 3rem;
+    line-height: 6rem;
+    color: var(--secondary-color);
+    gap: 4rem;
+    flex-direction: column;
+}
+.items_2>p{
+    font-size:2.5rem;
+    font-weight: 5rem;
+    padding: 4rem 0;
+}
+.items_2-1>img{
+    /* background-color: var(--secondary-color); */
+    width: 4rem;
+    height: 4rem;
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+.contenair_1{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60rem;
+}
+.code{
+    border: 1px solid #D9D9D9;
+    padding: 7rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.prime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prime1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contenair_1>div>a{
+    font-size: 1rem;
+    font-weight: 4rem;
+    color: var(--secondary-color);
+    align-items: center;
+    padding: .5rem;
+
+}
+.contenair_1>div>p{
+    align-items: center;
+padding: 1rem 4rem;
+font-size: 2.5rem;
+color: #000E01;
+}
+.last{
+    display: flex;
+}
+.last>.last-1{
+    flex: 1;
+    display: block;
+    gap: 3rem;
+    padding: 4rem 2rem;
+}
+.last-1>h1{
+    font-size: 4rem;
+    font-weight: 3rem;
+    line-height: 6rem;
+    color: var(--secondary-color);
+    gap: 4rem;
+    flex-direction: column;
+}
+.last-1>p{
+    font-size:2.5rem;
+    font-weight: 5rem;
+    padding: 4rem 0;
+    justify-content: space-around;
+}
+.last-1_image>img{
+    /* background-color: var(--secondary-color); */
+    width: 4rem;
+    height: 4rem;
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 3rem;
+}
+.last-2{
+    flex: 1;
+}
+
+@media only screen and ( max-width: 430px) {
+    
+    .h1{
+        font-size: 1.5rem;
+    }
+    .contenair{
+        flex-direction: column;
+    }
+    .contenair_1{
+        flex-direction: column;
+    }
+    .last{
+        flex-direction: column;
+    }
+}
