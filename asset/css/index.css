@@ -18,12 +18,6 @@
     width: 100vw;
     height: 100vh;
   }
-  .container {
-    width: 100%;
-  
-    margin-left: 2rem;
-    padding: 2rem;
-  }
   .esp-pub {
     margin-left: 2rem;
     display: flex;
@@ -96,8 +90,8 @@
 
   }
   .vis_fem_afriq{
-    flex:1;
-
+     flex:1;
+      
   }
   .esp-photo {
     display: flex;
@@ -149,10 +143,9 @@
   display: none;
   }
   
-  @media  only screen and (max-width : 430px){
+  @media  only screen and (max-width : 430px)  {
     body {
       overflow-x: hidden;
-      
     }
     .esp-pub {
       flex-direction: column;
@@ -198,25 +191,33 @@
     }
 
     .esp-photo {
-      flex-direction: column;
       gap: 5rem;
       width: auto;
       height: auto;
       margin-left: 2.5rem;
       margin-right: 2.5rem;
       padding-top: 4rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      scrollbar-color: rgb(255, 255, 255);
+    
     }
-    .canal2{
+
+    @keyframes infiniteScroll {
+      from {transform: translateX(0) }
+      to {transform: translateX(calc(0px - 50% - 50px));}
+    }
+  .canal2  {  
+                
       width:25rem;
       height: 15rem;
       top: 5837px;
       left: 581px;
     
-    
     }
     .imges  {  
      
-      
       width: 100%;
       display: flex;
       justify-content: center;
@@ -231,10 +232,12 @@
       flex-direction: column;
       width: 100;
 
+
     }
     .imgresponsive{
     
       display: block;
+
       }
       .h5responsive {
     
@@ -254,10 +257,24 @@
         background-color: var(--first-color);
         margin-top: 15rem;
         width: 100%;
-        padding-top:12.5rem;
-    
+        padding-top: 12rem;
       
       }
+
+      .vis_fem-afriq  {
+      
+         background-color: cover;
+         animation-duration: 30s;	
+         animation-name: HorizontalScroll;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+         height: 288px; 
+         gap: 100px;
+     }
+     @keyframes infiniteScroll {
+       from {transform: translateX(0) }
+       to {transform: translateX(calc(0px - 50% - 50px));}
+     }
   }
    
 
