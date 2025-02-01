@@ -1,216 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-    overflow-x: hidden;
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
-html{
+
+:root {
+    --font-family: 'Inter', serif;
+    --font-family-text: 'IBM Plex Sans', serif;
+    --font-family-titel: 'Open Sans', serif;
+    --primary-color: #000E01;
+    --secondry-color: #443434;
+    --border-color: #618264;
+}
+
+html {
     font-size: 10px;
-    font-family: "ibm plex", sans hebrew;
 }
-:root{
-    --firs-color:#FFFFFF;
-    --title-color:#000E01;
-    --secondary-color:#618264;
-}
-body{
+
+body {
     width: 100vw;
     height: 100vh;
-}
-.h1{
-padding: 7rem 4rem 2rem 3rem;
-font-weight: 6rem;
-font-size: 4rem;
-line-height: 6rem;
-color: var(--title-color);
-text-align: center;
-display: block;
+    overflow-x: hidden;
+
 
 }
-.h2{
-    display: none;
-}
-.contenair{
+
+/* steep 1 */
+ .section-navber {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18rem; 
+
 }
-.items_1{
-    flex: 1;
+
+/* steep 2 */
+ .section-page {
+    display: flex;
+    gap: 12rem;
+    list-style: none;
+    font-size: 24PX;
+    color: #000E01; 
+
+}
+
+.links {
+     display: flex;
+    list-style: none;
+    text-decoration: none; 
+}
+
+/* steep 3 */
+ .section-but {
+    width: 13rem;
+    height: 4rem;
     border-radius: 2rem;
-}
-.items_2{
-    flex: 1;
-    display: block;
-    gap: 3rem;
-    padding: 4rem 2rem;
-}
-.items_2>h1{
-    font-size: 4rem;
-    font-weight: 3rem;
-    line-height: 6rem;
-    color: var(--secondary-color);
-    gap: 4rem;
-    flex-direction: column;
-}
-.items_2>p{
-    font-size:2.5rem;
-    font-weight: 5rem;
-    padding: 4rem 0;
-}
-.items_2-image{
-    display: none;
-}
-.items_2-1>img{
-    /* background-color: var(--secondary-color); */
-    width: 4rem;
-    height: 4rem;
-    color: var(--secondary-color);
-    padding: 1rem;
-}
-.contenair_1{
-    /* background-color: blue; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60rem;
-}
-.code{
-    border: 1px solid #D9D9D9;
-    padding: 7rem 3rem;
-    display: flex;
-    flex-direction: column;
-}
-.prime{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: azure;
+    background-color: #618264; 
 }
 
-.prime1{
+/* steep-main */
+.section-main {
     display: flex;
+    gap: 3rem;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.section-contain {
+    display: flex;
+    flex: 1;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
     
 }
-.prime2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contenair_1>div>a{
-    font-size: 1rem;
-    font-weight: 4rem;
-    color: var(--secondary-color);
-    align-items: center;
-    padding: .5rem;
 
-}
-.contenair_1>div>p{
-    align-items: center;
-padding: 1rem 4rem;
-font-size: 2.5rem;
-color: #000E01;
-}
-.last{
+.section-day {
     display: flex;
-}
-.last>.last-1{
-    flex: 1;
-    display: block;
-    gap: 3rem;
-    padding: 4rem 2rem;
-}
-.last-1>h1{
-    font-size: 4rem;
-    font-weight: 3rem;
-    line-height: 6rem;
-    color: var(--secondary-color);
-    gap: 4rem;
-    flex-direction: column;
-}
-.last-1>p{
-    font-size:2.5rem;
-    font-weight: 5rem;
-    padding: 4rem 0;
-    justify-content: space-around;
-}
-.last-1_image>img{
-    /* background-color: var(--secondary-color); */
-    width: 4rem;
-    height: 4rem;
-    color: var(--secondary-color);
-    padding: 1rem;
-    border-radius: 3rem;
-}
-.last-2{
-    flex: 1;
+    gap: 1rem;
+    align-items: center;
 }
 
-@media only screen and ( max-width: 430px) {
-    
-    .h1{
-        display: none;
-    }
-    .h2{
-        font-weight: 6rem;
-        font-size: 2rem;
-        line-height: 3rem;
-        color: var(--title-color);
-        text-align: center;
-        display: block;
-    }
-    .contenair{
-        flex-direction: column;
-    }
-    .items_1{
-        width: 100%;
-        border-style: none;
-    }
-    .items_1-image{
-       display: none;
-    }
-    .items_2>h1{
-        gap: 0;
-        line-height: 3rem;
-    }
-    .items_2>p{
-        font-size: 2rem;
-        font-weight: 1rem;
-        padding: 1rem 0;
-    }
-    .items_2-image{
-        display: block;
-        border-left: none;
-        padding-left: 3rem;
-    }
-    .contenair_1{
-        display: flex;
-        gap: 2rem;
-     
-    }
-    .contenair_1>div>p{
-        font-size: 1.5rem;
-        justify-content: space-around;
-    }
-    .prime2{
-       display: none;
-    }
-    .code{
-        width: 15rem;
-        height: 20rem;
-    }
-    .prime1_1{
-        width: 15rem;
-        height: 20rem;
-    }
-    .last{
-      flex-direction: column-reverse;
-    }
-    .last-2-1{
-        width: 30rem;
-        height: 20rem;
-        padding-left: 7rem;
-    }
+.monday-morning {
+    width: 1.3rem;
+    height: 3.3rem;
+    background-color: var(--border-color);
+}
+
+.section-day>h4 {
+    font-family: var(--font-family-text);
+    padding-top: 2px;
+}
+
+.section-years {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+.section-month {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.section-month>p {
+    font-family: var(--font-family);
+}
+
+.section-month>h3 {
+    font-family: var(--font-family-text);
+}
+
+/* the third section */
+ .third-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+}
+
+.section-text p {
+    color: #79AC78;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section-text {
+    color: #000E01;
+    font-size: 1.2rem; 
+}
+
+/* the fourth-section */
+ .fourth-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    color: #000E01;
+    font-size: 3rem;
+    --font-family-text: var(--font-family-text) */
+}
+
+/* the last-section */
+.last-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    border-radius: 4rem; 
+
 }
