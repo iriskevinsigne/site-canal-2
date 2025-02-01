@@ -28,6 +28,7 @@
     margin-left: 2rem;
     display: flex;
     gap: 2rem;
+    padding-bottom: 5rem;
   }
   .gros-titre {
     display: flex;
@@ -102,7 +103,10 @@
   }
   footer{
     background-color: var(--first-color);
-    margin-top: 12.5rem;
+    margin-top: 35rem;
+    width: 100%;
+    padding-top:12.5rem;
+
   
   }
   .logo {
@@ -133,6 +137,7 @@
     display: flex;
   
   }
+  
   @media  only screen and (max-width : 430px){
     body {
       overflow-x: hidden;
@@ -212,6 +217,7 @@
     }
 
   }
+   
 
   
   
