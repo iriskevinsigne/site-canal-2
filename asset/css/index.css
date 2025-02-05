@@ -1,283 +1,279 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-  :root {
-    --first-color: #79ac78;
-    --second-color: #9e9e9f;
-    --third-color: #8ea7e9;
-    --quatrieme-couleur : #618264;
-  }
-  html {
-    font-family: "IBM plex sans hebrew";
-    font-size: 10px;
-  }
+  *{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+:root {
+  --first-color: #79ac78;
+  --second-color: #9e9e9f;
+  --third-color: #8ea7e9;
+  --quatrieme-couleur : #618264;
+}
+html {
+  font-family: "IBM plex sans hebrew";
+  font-size: 10px;
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.esp-pub {
+  margin-left: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+.gros-titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  gap: 10rem;
+  justify-items: start;
+  word-spacing: 10px;
+  
+}
+.gros-titre > .bordure1{
+  border: 0.5rem solid var(--quatrieme-couleur);
+  height: 4rem;
+}
+.gros-titre > .bordure2{
+  border:0.5rem solid var(--quatrieme-couleur);
+  height: 4rem;
+  
+
+}
+
+h1 {
+  
+  height: 1rem;
+  color: var(--quatrieme-couleur);
+  text-transform: uppercase;
+  font-size: 20px;
+  word-spacing: 10px;
+
+}
+
+
+img {
+  width: 100%;
+  
+}
+
+.images{
+  display: block;
+  flex-direction: column;
+  width: 100%;
+
+
+}
+p {
+  color: var(--first-color);
+  line-height: 1.5;
+  width: 100%;
+
+}
+.h5responsive {
+  
+  display: block;
+  font-size: 24px;
+  width: 100%;
+
+}
+h4{
+  
+  display: none;
+  font-size: 24px;
+  width: 100%;
+
+}
+.vis_fem_afriq{
+   flex:1;
+    
+}
+.esp-photo {
+  display: flex;
+  gap: 5rem;
+  width: auto;
+  height: 47.2rem;
+  padding-top: 12.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+footer{
+  background-color: var(--first-color);
+  margin-top: 10rem;
+  width: 100%;
+  padding-top:12.5rem;
+
+
+}
+.logo {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.instagram{
+  width: 3rem;
+  height: 3rem;
+  padding-bottom: 50px ;
+
+}
+.canal2{
+  width: 37.2rem;
+  height: 21.3rem;
+  top: 5837px;
+  left: 581px;
+
+
+}
+.logo_canal2{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.imgresponsive{
+  
+display: none;
+}
+
+@media  only screen and (max-width : 430px)  {
   body {
     overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
   }
   .esp-pub {
-    margin-left: 2rem;
-    display: flex;
-    gap: 2rem;
-    padding-bottom: 5rem;
-    padding-top: 4rem;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap:0
+  
+  }
+h1 {  
+  color: var(--quatrieme-couleur);
+  text-transform: uppercase;
+  font-size: 20px;
+  flex-direction: row;
+  border-left: 1rem solid var(--quatrieme-couleur);
+  height: 3rem;
+  padding-left: 1rem;
+  text-align: right;
+  margin-bottom: -3rem;
+  margin-left: 1rem;
   }
   .gros-titre {
+    flex-direction: column;
+    writing-mode: horizontal-tb;
+    gap: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    gap: 10rem;
-    justify-items: start;
-    word-spacing: 10px;
+    text-align: right;
+    align-items: baseline;
+    justify-content: right;
+
+
     
   }
   .gros-titre > .bordure1{
-    border: 0.5rem solid var(--quatrieme-couleur);
+    
+    border: none;
     height: 4rem;
   }
-  .gros-titre > .bordure2{
-    border:0.5rem solid var(--quatrieme-couleur);
+  .gros-titre > .bordure2 {
+    border:none;
     height: 4rem;
     
   
   }
-  
-  h1 {
-    
-    height: 1rem;
-    color: var(--quatrieme-couleur);
-    text-transform: uppercase;
-    font-size: 20px;
-    word-spacing: 10px;
-  
-  }
-  
-  
-  img {
-    width: 100%;
-    
-  }
-  
-  .images{
-    display: block;
-    flex-direction: column;
 
-  
-  }
-  p {
-    color: var(--first-color);
-    line-height: 1.5;
-    width: 100%;
-  
-  }
-  .h5responsive {
-    
-    display: block;
-    font-size: 24px;
-    width: 100%;
-
-  }
-  h4{
-    
-    display: none;
-    font-size: 24px;
-    width: 100%;
-
-  }
-  .vis_fem_afriq{
-     flex:1;
-      
-  }
   .esp-photo {
-    display: flex;
     gap: 5rem;
     width: auto;
-    height: 47.2rem;
-    padding-top: 12.5rem;
+    height: auto;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+    padding-top: 4rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scrollbar-color: rgb(255, 255, 255);
+  
   }
-  footer{
-    background-color: var(--first-color);
-    width: 100%;
-    margin-top: 15rem;
-    padding-top:4rem;
 
-  
+  @keyframes infiniteScroll {
+    from {transform: translateX(0) }
+    to {transform: translateX(calc(0px - 50% - 50px));}
   }
-  .logo {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-  
-  
-  }
-  .instagram{
-    width: 3rem;
-    height: 3rem;
-    padding-bottom: 50px ;
-  
-  }
-  .canal2{
-    width: 37.2rem;
-    height: 21.3rem;
+.canal2  {  
+              
+    width:25rem;
+    height: 15rem;
     top: 5837px;
     left: 581px;
   
-  
   }
-  .logo_canal2{
+  .imges  {  
+   
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-  
+    flex-direction: column;
+    margin-left: 1rem;
+    padding-right: 1rem;
+
+  }
+  .images{
+    display: none;
+    flex-direction: column;
+    width: 100;
+
+
   }
   .imgresponsive{
-    
-  display: none;
-  }
   
-  
-  @media  only screen and (max-width : 430px)  {
-    body {
-      overflow-x: hidden;
-    }
-    .esp-pub {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      gap:0
-    
-    }
-  h1 {  
-    color: var(--quatrieme-couleur);
-    text-transform: uppercase;
-    font-size: 20px;
-    flex-direction: row;
-    border-left: 1rem solid var(--quatrieme-couleur);
-    height: 3rem;
-    padding-left: 1rem;
-    text-align: right;
-    margin-bottom: -3rem;
-    margin-left: 1rem;
-    }
-    .gros-titre {
-      flex-direction: column;
-      writing-mode: horizontal-tb;
-      gap: 0;
-      display: flex;
-      text-align: right;
-      align-items: baseline;
-      justify-content: right;
-  
+    display: block;
 
-      
     }
-    .gros-titre > .bordure1{
-      
-      border: none;
-      height: 4rem;
-    }
-    .gros-titre > .bordure2 {
-      border:none;
-      height: 4rem;
-      
-    
-    }
-
-    .esp-photo {
-      gap: 5rem;
-      width: auto;
-      height: auto;
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
-      padding-top: 4rem;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      scrollbar-width: none;
-      scrollbar-color: rgb(255, 255, 255);
-    
-    }
-
-    @keyframes infiniteScroll {
-      from {transform: translateX(0) }
-      to {transform: translateX(calc(0px - 50% - 50px));}
-    }
-  .canal2  {  
-                
-      width:25rem;
-      height: 15rem;
-      top: 5837px;
-      left: 581px;
-    
-    }
-    .imges  {  
-     
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-left: 1rem;
-      padding-right: 1rem;
+    .h5responsive {
   
-    }
-    .images{
       display: none;
-      flex-direction: column;
-      width: 100;
-
-
+      font-size: 24px;
+      width: 100%;
+  
     }
-    .imgresponsive{
-    
+    h4{
+      
       display: block;
-
-      }
-      .h5responsive {
-    
-        display: none;
-        font-size: 24px;
-        width: 100%;
-    
-      }
-      h4{
-        
-        display: block;
-        font-size: 24px;
-        width: 100%;
-    
-      }
-      footer{
-        background-color: var(--first-color);
-        margin-top: 15rem;
-        width: 100%;
-        padding-top: 12rem;
-      
-      }
-
-      .vis_fem-afriq  {
-      
-         background-color: cover;
-         animation-duration: 30s;	
-         animation-name: HorizontalScroll;
-         animation-iteration-count: infinite;
-         animation-timing-function: linear;
-         height: 288px; 
-         gap: 100px;
-     }
-     @keyframes infiniteScroll {
-       from {transform: translateX(0) }
-       to {transform: translateX(calc(0px - 50% - 50px));}
-     }
-  }
-   
-
+      font-size: 24px;
+      width: 100%;
   
-  
+    }
+    footer{
+      background-color: var(--first-color);
+      margin-top: 15rem;
+      width: 100%;
+      padding-top: 12rem;
+    
+    }
+
+    .vis_fem-afriq  {
+    
+       background-color: cover;
+       animation-duration: 30s;	
+       animation-name: HorizontalScroll;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+       height: 288px; 
+       gap: 100px;
+   }
+   @keyframes infiniteScroll {
+     from {transform: translateX(0) }
+     to {transform: translateX(calc(0px - 50% - 50px));}
+   }
+}
