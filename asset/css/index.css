@@ -23,6 +23,7 @@
     display: flex;
     gap: 2rem;
     padding-bottom: 5rem;
+    padding-top: 4rem;
   }
   .gros-titre {
     display: flex;
@@ -65,7 +66,6 @@
   .images{
     display: block;
     flex-direction: column;
-    width: 100;
 
   
   }
@@ -104,9 +104,9 @@
   }
   footer{
     background-color: var(--first-color);
-    margin-top: 35rem;
     width: 100%;
-    padding-top:12.5rem;
+    margin-top: 15rem;
+    padding-top:4rem;
 
   
   }
@@ -142,6 +142,7 @@
     
   display: none;
   }
+  
   
   @media  only screen and (max-width : 430px)  {
     body {
